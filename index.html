@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+
+  <div id="flex-container">
+
+    <div id="item-one" class="text-wrap">
+      <div id="text-container">
+        <div id="text-header">
+        <h1>Learn to code by <br>watching others</h1>
+
+        <div>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="item-two">
+      <div class="container">
+
+        <div id="box-try">
+          <div id="text">
+            <p id="text-one">Try it free 7 days</p>
+            <p id="text-two">then</p>
+            <p id="text-three">$20/mo. thereafter</p>
+          </div>
+        </div>
+
+        <div id="main-box">
+          <form>
+            <div class="input-icon">
+              <input type="text" id="fname" name="txt_fname" placeholder="First Name" class="container-two"
+                onclick="checkError(0)">
+              <img src="./images/icon-error.svg" alt="Error" class="container img-error" id="one">
+            </div>
+            <p class="error-msg" id="fname">First Name cannot be empty</p>
+
+            <div class="input-icon">
+              <input type="text" id="lname" name="txt_lname" placeholder="Last Name" class="container-two"
+                onclick="checkError(1)">
+              <img src="./images/icon-error.svg" alt="Error" class="container img-error">
+            </div>
+            <p class="error-msg" id="lname">Last Name cannot be empty</p>
+
+            <div class="input-icon">
+              <input type="email" id="email" name="txt_email" placeholder="Email Address" class="container-two"
+                onclick="checkError(2)">
+              <img src="./images/icon-error.svg" alt="Error" class="container img-error">
+            </div>
+            <p class="error-msg" id="email">Email cannot be empty</p>
+
+            <div class="input-icon">
+              <input type="password" id="password" name="txt_password" placeholder="Password" class="container-two"
+                onclick="checkError(3)">
+              <img src="./images/icon-error.svg" alt="Error" class="container img-error">
+            </div>
+            <p class="error-msg" id="password">Password cannot be empty</p>
+          </form>
+
+          <div id="trial-box" onclick="trialClick()">
+            <p>Claim your free trial</p>
+          </div>
+
+          <div id="terms">
+            <p id="terms-one">By clicking the button, you are agreeing to our </p>
+            <p id="terms-two">Terms and Services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      <br>
+      Coded by <a href="https://github.com/algavania" target="_blank">Alga</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

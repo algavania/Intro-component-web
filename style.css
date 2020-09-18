@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+}
+
+#text-header h1 {
+  text-align: center;
+  font-weight: 600;
+  margin: 70px 30px 20px 30px;
+  font-size: 25px;
+}
+
+#text-header p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 20px 55px 20px;
+}
+
+#box-try {
+  background-color: hsl(248, 32%, 49%);
+  height: 80px;
+  text-align: center;
+  margin: 0 20px 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px darkslategray;
+}
+
+#text {
+  padding-top: 15px;
+  font-size: 16px;
+  margin: 0 40px 0 40px;
+}
+
+#text #text-one {
+  display: inline;
+  font-weight: 600;
+}
+
+#text #text-two {
+  display: inline;
+  font-weight: 300;
+}
+
+#text #text-three {
+  font-weight: 300;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.container-two {
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.container-three {
+  width: 1%;
+  margin: auto;
+}
+
+#main-box {
+  background-color: white;
+  color: gray;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+  padding-top: 10px;
+  box-shadow: 0 0 8px darkslategray;
+}
+
+#main-box p {
+  font-weight: 600;
+}
+
+.input-icon {
+  position: relative;
+}
+
+.img-error {
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  display: none;
+  top: 30%;
+  right: 12%;
+  transition: 0.3s;
+}
+
+.input-icon #one {
+  margin-top: 0;
+}
+
+form input {
+  padding: 15px;
+  font-size: 14px;
+  display: block;
+  font-weight: 600;
+  color: gray;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+form input:focus {
+  outline: none !important;
+  border: 1px solid black;
+}
+
+.error-msg {
+  margin: 0 25px 15px 25px;
+  font-size: 11px;
+  color: red;
+  display: none;
+  font-style: italic;
+  float: right;
+}
+
+#trial-box {
+  height: 50px;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  text-align: center;
+  margin: 20px 35px 10px 35px;
+  cursor: pointer;
+  box-shadow: 0 0 5px darkslategray;
+}
+
+#trial-box:hover {
+  background-color: hsl(154, 58%, 44%);
+}
+
+#trial-box p {
+  text-transform: uppercase;
+  padding: 14px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  font-size: 15px;
+}
+
+#terms {
+  text-align: center;
+  font-size: 11px;
+  margin: 0 30px 0 30px;
+  padding-bottom: 30px;
+}
+
+#terms #terms-one {
+  color: hsl(246, 25%, 77%);
+  font-weight: 400;
+  display: inline;
+}
+
+#terms #terms-two {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  display: inline;
+}
+
+.attribution {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: underline;
+    color: white;
+}
+
+@media only screen and (width: 280px) {
+  #text p {
+    font-size: 14px;
+  }
+
+  #trial-box p {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: url("./images/bg-intro-desktop.png");
+  }
+
+  #box-try {
+    height: 50px;
+    margin: 0;
+    width: 85%;
+  }
+
+  #text {
+    font-size: 16px;
+  }
+
+  #text #text-three {
+    display: inline;
+  }
+
+  #flex-container {
+    display: flex;
+  }
+
+  #item-one {
+    width: 50%;
+    margin-top: 225px;
+  }
+
+  #main-box {
+      width: 85%;
+      margin: 20px 0 60px 0;
+
+  }
+
+  form input {
+    font-size: 16px;
+  }
+
+  #text-header h1 {
+    font-size: 50px;
+    margin: 30px 30px 20px 30px;
+    text-align: start;
+  }
+
+  #text-header p {
+    text-align: start;
+    font-size: 20px;
+    margin: 0 30px 0 30px;
+    font-weight: 200;
+  }
+
+  .text-wrap {
+    margin-left: 7%;
+  }
+
+  #item-two {
+    margin-top: 130px;
+    width: 50%;
+  }
+
+  #trial-box {
+    margin: 20px 50px 10px 50px;
+  }
+
+  .error-msg {
+    margin: 0 45px 15px 45px;
+  }
+
+  .attribution {
+      display: block;
+      text-align: center;
+  }
+  
+  .attribution a {
+      text-decoration: underline;
+      color: white;
+  }
+}
