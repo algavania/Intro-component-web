@@ -127,13 +127,14 @@ form input:focus {
 .img-error {
   position: absolute;
   top: 0.8rem;
+  display: none;
   right: 1.5rem;
 }
 
 .error-msg {
   font-size: 11px;
   color: red;
-  display: block;
+  display: none;
   font-style: italic;
   text-align: right;
   margin-top: 0.5rem;
