@@ -7,7 +7,6 @@ var errorMsg = document.getElementsByClassName("error-msg");
 var btnClaim = document.getElementById('trial-box');
 var imgError = document.getElementsByClassName('img-error');
 var isError;
-var windowMatch = window.matchMedia('(min-width: 1200px)');
 
 function trialClick() {
     if (fname.value === '') {
@@ -63,11 +62,6 @@ function trialClick() {
             imgError[3].style.marginTop = '0';
         }
         errorMsg['password'].style.display = 'block';
-        if (windowMatch.matches) {
-            btnClaim.style.margin = '40px 50px 10px 50px'
-        } else {
-            btnClaim.style.margin = '40px 35px 10px 35px'
-        }
         password.style.border = "2px solid red";
         imgError[3].style.display = 'block';
     } else {
@@ -77,11 +71,6 @@ function trialClick() {
     }
 
     if (fname.value != '' && lname.value != '' && validateEmail(email.value) && password.value.length >= 6) {
-        if (windowMatch.matches) {
-            btnClaim.style.margin = '20px 50px 10px 50px'
-        } else {
-            btnClaim.style.margin = '20px 35px 10px 35px'
-        }
         fname.style.border = "1px solid lightgray";
         lname.style.border = "1px solid lightgray";
         email.style.border = "1px solid lightgray";
@@ -91,11 +80,7 @@ function trialClick() {
 }
 
 function checkError(index) {
-    if (windowMatch.matches) {
-        btnClaim.style.margin = '20px 50px 10px 50px'
-    } else {
-        btnClaim.style.margin = '20px 35px 10px 35px'
-    }    for (let index = 0; index < imgError.length; index++) {
+    for (let index = 0; index < imgError.length; index++) {
         errorMsg[index].style.display = 'none';
         imgError[index].style.display = 'none';
     }
@@ -103,7 +88,7 @@ function checkError(index) {
     lname.style.border = "1px solid lightgray";
     email.style.border = "1px solid lightgray";
     password.style.border = "1px solid lightgray";
-    form.elements[index].style.border = "1px solid black";
+    form.elements[index].style.border = "2px solid black";
 
 }
 
