@@ -147,9 +147,12 @@ form input:focus {
   color: white;
   text-align: center;
   width: 100%;
+  outline: none;
   cursor: pointer;
   margin-bottom: 1rem;
-  box-shadow: 0 0 5px darkslategray;
+  border: none;
+  box-shadow: 0 4px 0 #2cb579;
+  transition: background-color .3s, box-shadow .3s;
 }
 
 #trial-box:hover {

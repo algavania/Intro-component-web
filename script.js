@@ -8,7 +8,8 @@ var btnClaim = document.getElementById('trial-box');
 var imgError = document.getElementsByClassName('img-error');
 var isError;
 
-function trialClick() {
+function trialClick(e) {
+    e.preventDefault();
     if (fname.value === '') {
         isError = true;
         fname.style.border = "2px solid red";
@@ -78,6 +79,8 @@ function trialClick() {
         alert('Success');
     }
 }
+
+form.addEventListener('submit', trialClick)
 
 function checkError(index) {
     for (let index = 0; index < imgError.length; index++) {
