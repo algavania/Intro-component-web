@@ -43,30 +43,30 @@
         <form>
           <div class="input-icon">
             <input type="text" id="fname" name="txt_fname" placeholder="First Name" class="container-two"
-              onclick="checkError(0)">
+              onclick="checkError(0)" aria-label="fname">
             <img src="./images/icon-error.svg" alt="Error" class="container img-error" id="one">
-            <p class="error-msg" id="fname">First Name cannot be empty</p>
+            <p class="error-msg">First Name cannot be empty</p>
           </div>
 
           <div class="input-icon">
             <input type="text" id="lname" name="txt_lname" placeholder="Last Name" class="container-two"
-              onclick="checkError(1)">
+              onclick="checkError(1)" aria-label="lname">
             <img src="./images/icon-error.svg" alt="Error" class="container img-error">
-            <p class="error-msg" id="lname">Last Name cannot be empty</p>
+            <p class="error-msg">Last Name cannot be empty</p>
           </div>
 
           <div class="input-icon">
             <input type="email" id="email" name="txt_email" placeholder="Email Address" class="container-two"
-              onclick="checkError(2)">
+              onclick="checkError(2)" aria-label="email">
             <img src="./images/icon-error.svg" alt="Error" class="container img-error">
-            <p class="error-msg" id="email">Email cannot be empty</p>
+            <p class="error-msg">Email cannot be empty</p>
           </div>
 
           <div class="input-icon">
             <input type="password" id="password" name="txt_password" placeholder="Password" class="container-two"
-              onclick="checkError(3)">
+              onclick="checkError(3)" aria-label="password">
             <img src="./images/icon-error.svg" alt="Error" class="container img-error">
-            <p class="error-msg" id="password">Password cannot be empty</p>
+            <p class="error-msg">Password cannot be empty</p>
           </div>
 
           <div id="trial-box" onclick="trialClick()">
